@@ -1,5 +1,5 @@
 import random
-class Hilo:
+class Hilo: #to be moved to seporate file
     """
     A card that has a number on it
 
@@ -82,7 +82,7 @@ class Director:
 
 
         
-def main():
+def main(): #to be moved to seporate file
     """
     Call the director class to run the game.
     """
