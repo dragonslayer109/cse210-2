@@ -1,7 +1,7 @@
 # Jumper
 Jumper is a game in which the player seeks to solve a puzzle by guessing the letters of a secret word one at a time.
-Jumper is played according to the following rules.
 
+Jumper is played according to the following rules.
 The puzzle is a secret word randomly chosen from a list.
 The player guesses a letter in the puzzle.
 If the guess is correct, the letter is revealed.
@@ -31,5 +31,5 @@ root                    (project root folder)
 * Python 3.8.0
 
 ## Authors
-Raydon Vetten 
-Val Lorence Labisa 
+*Raydon Vetten 
+*Val Lorence Labisa 
