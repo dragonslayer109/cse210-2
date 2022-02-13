@@ -63,8 +63,10 @@ class Director:
         for i in self._secret:
             if self.guess == self._secret:
                 self.player.display #will change based on player calls made
+                self.jumper.display
             else:
                 self.lives -= 1
+                self.player.display
                 self.jumper.display #will change based on jumper calls made
                 
                 if self.lives == 0:

@@ -1,6 +1,6 @@
 from Game.secret import Secret 
 from Game.director import Director
-from Game.jumper import Jumper
+
 
 class Player:
     "This class is for for every correct guess of the player"
