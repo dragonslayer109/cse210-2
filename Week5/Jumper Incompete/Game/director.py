@@ -1,6 +1,6 @@
 from Game.secret import Secret 
 from Game.player import Player
-from Game.player import Jumper
+from Game.jumper import Jumper
 class Director:
     """
     Directs the gameplay of the game
@@ -47,6 +47,7 @@ class Director:
         self.player.display #will change based on player calls made
         self.jumper.display #will change based on jumper calls made
         self.guess = input("Guess a letter [a-z]: ")
+        return self.guess
 
     def do_updates(self):
         """
@@ -61,10 +62,11 @@ class Director:
             return 
         for i in self._secret:
             if self.guess == self._secret:
-                self.player.update #will change based on player calls made
+                self.player.display #will change based on player calls made
             else:
-                self.jumper.update #will change based on jumper calls made
                 self.lives -= 1
+                self.jumper.display #will change based on jumper calls made
+                
                 if self.lives == 0:
                     self.set_playing()
                 
