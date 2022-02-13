@@ -8,7 +8,10 @@ class Jumper:
         
 
     def display(self):
-        parachute = ["  ___", "/ ___ \ ", "\     /", " \   /", "   O", "  /|\ ", "  / \ ", "⌃⌃⌃⌃⌃⌃⌃"]
+        file = open("Week5/Jumper Incompete/Text/Parachute.txt", "r")
+        parachute = file.readlines()
+        
+        #parachute = ["  ___", "/ ___ \ ", "\     /", " \   /", "   O", "  /|\ ", "  / \ ", "⌃⌃⌃⌃⌃⌃⌃"]
         if self._lives == 4:
             for x in range(4-self._lives, len(parachute)):
                 print(parachute[x])
